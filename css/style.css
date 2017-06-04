@@ -1,0 +1,656 @@
+body {
+    background-color: #CCFFFF;
+}
+
+body * {
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    color: #333333;
+}
+
+#headerLogo>a:first-of-type {
+    margin-left: 350px;
+}
+
+#headerLogo>a>img {
+    margin-top: 8px;
+    max-width: 20px;
+}
+
+#headerLogo {
+    background-color: #CCFFFF;
+    margin: -10px;
+    height: 50px;
+}
+
+#navigation {
+    background-color: #9A99FF;
+    margin: -10px;
+    height: 100px;
+    width: 1950px;
+}
+
+#navigation>img {
+    max-width: 185px;
+    float: left;
+    margin-left: 345px;
+    margin-top: 15px;
+}
+
+#navigation>ul {
+    float: left;
+    margin-left: 100px;
+    margin-top: 40px;
+    width: 550px;
+}
+
+#navigation>ul>li {
+    margin-left: 20px;
+    float: left;
+}
+
+#navigation>ul>li>a {
+    text-decoration: none;
+    color: #333333;
+}
+
+#navigation>ul>li>ul>li {
+    display: none;
+    margin-bottom: -5px;
+    margin-left: -40px;
+    width: 80px;
+    background-color: #EEE;
+}
+
+#navigation>ul>li>ul>li {
+    padding: 5px;
+}
+
+#navigation>ul>li>ul>li:hover {
+    background-color: #FFF;
+}
+
+#navigation>ul>li:hover>ul>li {
+    display: block;
+}
+
+#navigation>ul>li>ul>li:hover>a {
+    color: #D73C37;
+}
+
+.arrow {
+    color: white;
+}
+
+#conteneurSlider {
+    background-color: #CCFFFF;
+    height: 420px;
+    width: 1900px;
+    margin-top: 10px;
+    margin-left: -10px;
+}
+
+#conteneurImg {
+    background-color: gold;
+    padding: 0px;
+    float: left;
+    position: relative;
+    top: 28px;
+    overflow: hidden;
+    height: 360px;
+    width: 940px;
+}
+
+#conteneurImg>ul {
+    position: relative;
+    width: 6000px;
+    height: 360px;
+    margin-top: 0px;
+    margin-left: -40px;
+}
+
+#conteneurImg>ul>li {
+    display: inline-block;
+    position: relative;
+    margin: 0px;
+    width: 940px;
+    height: 360px;
+}
+
+@keyframes example {
+    from {
+        left: 0px;
+    }
+    to {
+        left: -940px;
+    }
+}
+
+#btnLeft:active+#conteneurImg>ul>li {
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+#btnLeft {
+    float: left;
+    margin-left: 250px;
+}
+
+#btnRight {
+    float: left;
+}
+
+#btnLeft,
+#btnRight {
+    margin-top: 175px;
+}
+
+#partFirst {
+    background-color: white;
+    height: 750px;
+    width: 1900px;
+    margin-left: -10px;
+}
+
+#partFirst-top {
+    background-color: white;
+    height: 420px;
+    width: 1900px;
+}
+
+#one,
+#two,
+#three {
+    background-color: white;
+    float: left;
+    width: 300px;
+    height: 420px;
+    margin-right: 20px;
+}
+
+#one>div,
+#two>div,
+#three>div {
+    background-color: #9A99FF;
+    height: 110px;
+}
+
+#one>div img,
+#two>div img,
+#three>div img {
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+#one>div p,
+#two>div p,
+#three>div p {
+    float: left;
+    width: 170px;
+    margin-top: 35px;
+    margin-left: 5px;
+}
+
+#one>p,
+#two>p,
+#three>p {
+    clear: both;
+}
+
+#one {
+    margin-left: 275px;
+}
+
+#partFirst-bottom>p {
+    border-bottom: 1px solid black;
+    margin-left: 275px;
+    padding-bottom: 10px;
+    margin-top: 35px;
+}
+
+#partFirst-bottom>figure {
+    float: left;
+    margin: 15px;
+}
+
+#partFirst-bottom>figure>div {
+    border: 1px solid black;
+    margin-bottom: 8px;
+}
+
+#partFirst-bottom>figure>div>img {
+    margin: 5px;
+    margin-bottom: 1px;
+}
+
+#partFirst-bottom>figure:first-of-type {
+    margin-left: 275px;
+}
+
+#partLast {
+    clear: both;
+    width: 1900px;
+    height: 700px;
+    background-color: #CCFFFF;
+}
+
+#partLast>#left {
+    float: left;
+    width: 430px;
+    margin-left: 300px;
+    margin-right: 15px;
+}
+
+#partLast>#right {
+    float: left;
+    width: 445px;
+}
+
+#partLast>#right>div>img {
+    clear: both;
+    float: left;
+    margin-top: 20px;
+}
+
+#partLast>#right>div>p {
+    float: left;
+    width: 315px;
+    margin-left: 10px;
+}
+
+#partLast>#right>p,
+#partLast>#left>p:first-of-type,
+#partLast>#bottom>p:first-of-type {
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+#partLast>#bottom {
+    clear: both;
+    width: 950px;
+    margin-left: 300px;
+}
+
+#partLast>#bottom>a {
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 3px;
+    background-color: grey;
+}
+
+#end {
+    clear: both;
+    background-color: #9A99FF;
+    height: 130px;
+    margin-top: 661.5px;
+    margin-left: -10px;
+    margin-bottom: -10px;
+    width: 1700px;
+}
+
+#end>ul {
+    position: relative;
+    top: 25px;
+    margin-left: 250px;
+}
+
+#end>ul>li {
+    float: left;
+    margin-right: 35px;
+}
+
+#end>p {
+    font-size: 12px;
+    position: relative;
+    clear: both;
+    top: 65px;
+    margin-left: 250px;
+}
+
+
+/*----------------------------------------------------- mobile -------------------------------------------------------------*/
+
+@media screen and (max-width: 361px) {
+    #headerLogo>a:first-of-type {
+        margin-left: 5px;
+    }
+    #navigation {
+        height: auto;
+        overflow: auto;
+    }
+    #headerLogo>a>img {
+        clear: both;
+        margin-top: 10px;
+    }
+    #navigation>img {
+        clear: both;
+        margin-left: 35px;
+    }
+    #navigation>ul {
+        clear: both;
+        margin-left: -35px;
+        margin-top: 25px;
+    }
+    #navigation>ul>li,
+    #navigation>ul>li>ul>li {
+        clear: both;
+        margin: 0px;
+        padding: 3px;
+        width: 347px;
+    }
+    #navigation>ul>li>ul>li {
+        margin-left: -40px;
+    }
+    #conteneurSlider {
+        height: 200px;
+    }
+    #conteneurImg {
+        width: 350px;
+        height: 134px;
+    }
+    #conteneurImg>ul>li {
+        display: inline-block;
+        position: relative;
+        margin: 0px;
+        width: 350px;
+        height: 25px;
+    }
+    #conteneurImg>ul>li>img {
+        max-width: 350px;
+    }
+    #btnLeft {
+        margin-left: 0px;
+        margin-right: -15px;
+    }
+    #btnLeft,
+    #btnRight {
+        margin-top: 75px;
+    }
+    #partFirst {
+        height: 1300px;
+    }
+    #partFirst-top {
+        height: 990px;
+    }
+    #one,
+    #two,
+    #three {
+        clear: both;
+        font-size: 14px;
+        width: 355px;
+        height: 330px;
+        margin-left: 4px;
+    }
+    #one>div,
+    #two>div,
+    #three>div {
+        height: 110px;
+    }
+    #one>div img,
+    #two>div img,
+    #three>div img {
+        float: left;
+        max-width: 80px;
+    }
+    #one>div p,
+    #two>div p,
+    #three>div p {
+        width: 200px;
+        margin-left: 30px;
+    }
+    #two>div img {
+        margin-top: 15px;
+    }
+    #partFirst-bottom>p {
+        margin-left: 5px;
+        margin-bottom: 2px;
+        margin-top: 5px;
+    }
+    #partFirst-bottom>figure:nth-of-type(2),
+    #partFirst-bottom>figure:nth-of-type(3) {
+        display: none;
+    }
+    #partFirst-bottom>figure>div>img {
+        width: 333px;
+        height: 175px;
+    }
+    #partFirst-bottom>figure:first-of-type {
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+    #partLast {
+        font-size: 14px;
+        height: 1275px;
+    }
+    #partLast>#left,
+    #partLast>#right,
+    #partLast>#bottom {
+        clear: both;
+        margin-left: 10px;
+        width: 345px;
+    }
+    #partLast>#right {
+        clear: both;
+    }
+    #partLast>#bottom {
+        margin-left: 10px;
+    }
+    #end {
+        height: 90px;
+        margin-top: 1235.5px;
+        width: 380px;
+    }
+    #end>ul {
+        top: 15px;
+        margin-left: 10px;
+    }
+    #end>ul>li {
+        font-size: 15px;
+    }
+    #end>p {
+        top: 25px;
+        margin-left: 10px;
+    }
+}
+
+
+/*----------------------------------------------------- Desctop -------------------------------------------------------------*/
+
+
+/*----------------------------------------------------- tablette  Portait -------------------------------------------------------------*/
+
+@media screen and (min-width: 361px) and (max-width: 769px) and (orientation: portrait) {
+    #headerLogo>a:first-of-type {
+        margin-left: 50px;
+    }
+    #navigation {
+        height: auto;
+        overflow: auto;
+    }
+    #headerLogo>a>img {
+        clear: both;
+        margin-top: 10px;
+    }
+    #navigation>img {
+        clear: both;
+        margin-left: 300px;
+    }
+    #navigation>ul {
+        clear: both;
+        margin-left: 85px;
+        margin-top: 25px;
+    }
+    #navigation>ul>li,
+    #navigation>ul>li>ul>li {
+        clear: both;
+        margin: 0px;
+        padding: 3px;
+        width: 525px;
+    }
+    #navigation>ul>li>ul>li {
+        margin-left: -40px;
+    }
+    #conteneurImg {
+        width: 690px;
+        height: 265px;
+    }
+    #conteneurImg>ul>li {
+        display: inline-block;
+        position: relative;
+        margin: 0px;
+        width: 690px;
+        height: 265px;
+    }
+    #conteneurImg>ul>li>img {
+        max-width: 690px;
+    }
+    #btnLeft {
+        margin-left: 20px;
+    }
+    #partFirst-top {
+        height: 825px;
+    }
+    #one,
+    #two,
+    #three {
+        clear: both;
+        width: 700px;
+        height: 275px;
+        margin-left: 35px;
+    }
+    #one>div,
+    #two>div,
+    #three>div {
+        height: 110px;
+    }
+    #one>div img,
+    #two>div img,
+    #three>div img {
+        float: left;
+        max-width: 80px;
+    }
+    #one>div p,
+    #two>div p,
+    #three>div p {
+        width: 250px;
+        margin-left: 50px;
+    }
+    #two>div img {
+        margin-top: 15px;
+    }
+    #partFirst {
+        height: 1400px;
+    }
+    #partFirst-top {
+        height: 825px;
+    }
+    #partFirst-bottom>p {
+        margin-left: 35px;
+    }
+    #partFirst-bottom>figure:nth-of-type(2),
+    #partFirst-bottom>figure:nth-of-type(3) {
+        display: none;
+    }
+    #partFirst-bottom>figure>div>img {
+        width: 550px;
+        height: 400px;
+    }
+    #partFirst-bottom>figure:first-of-type {
+        margin-left: 85px;
+    }
+    #partLast {
+        height: 950px;
+    }
+    #partLast>#left,
+    #partLast>#right,
+    #partLast>#bottom {
+        clear: both;
+        margin-left: 90px;
+        width: 550px;
+    }
+    #partLast>#right {
+        clear: both;
+    }
+    #partLast>#bottom {
+        margin-left: 70px;
+    }
+    #end {
+        height: 90px;
+        margin-top: 925.5px;
+        width: 780px;
+    }
+    #end>ul {
+        top: 15px;
+        margin-left: 10px;
+    }
+    #end>p {
+        top: 35px;
+        margin-left: 20px;
+    }
+}
+
+
+/*----------------------------------------------------- tablette  paysage -------------------------------------------------------------*/
+
+@media screen and (min-width: 361px) and (max-width: 1025px) and (orientation: landscape) {
+    #headerLogo>a:first-of-type {
+        margin-left: 50px;
+    }
+    #navigation {
+        height: 150px;
+    }
+    #headerLogo>a>img {
+        margin-top: 10px;
+    }
+    #navigation>img {
+        margin-left: 65px;
+    }
+    #navigation>ul {
+        clear: both;
+        margin-left: -10px;
+        margin-top: 25px;
+    }
+    #btnLeft {
+        float: left;
+        margin-left: 25px;
+    }
+    #one {
+        margin-left: 47px;
+    }
+    #partFirst {
+        height: 725px;
+    }
+    #partFirst-bottom>p {
+        margin-left: 45px;
+    }
+    #partFirst-bottom>figure:first-of-type {
+        margin-left: 45px;
+    }
+    #partLast {
+        clear: both;
+        width: 1900px;
+        height: 700px;
+    }
+    #partLast>#left {
+        margin-left: 70px;
+    }
+    #partLast>#bottom {
+        margin-left: 70px;
+    }
+    #end {
+        height: 90px;
+        margin-top: 605.5px;
+        width: 1030px;
+    }
+    #end>ul {
+        top: 15px;
+        margin-left: 10px;
+    }
+    #end>p {
+        top: 35px;
+        margin-left: 20px;
+    }
+}
